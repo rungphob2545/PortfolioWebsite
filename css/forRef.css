@@ -1,0 +1,86 @@
+body{
+    /* ส่วน body */
+    background-image:url(https://i.pinimg.com/564x/ac/af/b3/acafb3e0d487ebf412f8d118fc54b486.jpg);
+    background-position: center;
+    font-family:monospace;
+}
+
+ul {
+    /* สำหรับลิสต์ลิงค์ไปหน้าต่างๆ */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color:rgb(156, 171, 240);
+    font-size:18px;
+}
+    /* สำหรับลิสต์ลิงค์ไปหน้าต่างๆ */
+li {
+    float:right;
+}
+    /* สำหรับลิสต์ลิงค์ไปหน้าต่างๆ */
+li a{
+    display: block;
+    color:#212F3D;
+    padding:18px 14px;
+    text-decoration: none;
+    text-align: center;
+}
+    /* เมื่อเอาเมาส์วางไว้ที่ลิงค์ */
+li a:hover{
+    background-color:#525D69;
+    color:#FFF;
+
+}
+    /* cssสำหรับแสดงหน้าที่เราอยู่ */
+.active{
+    background-color:#31383E;
+    color:#FFF;
+}
+    /* สำหรับลิงค์home */
+.activehome{
+    background-color:#0E0E0F;
+    color:#FFF;
+}
+    /* สำหรับลิงค์home */
+.activehome:hover{
+    background-color:#31383E;
+    color:#FFF;
+}
+
+.container h1 {
+    color:rgb(174, 0, 255);
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 10px 4px 3px rgb(0, 0, 0);
+    font-family: serif;
+}
+
+.container h2 {
+    font-size:30px;
+    color:rgb(247, 20, 20);
+    text-shadow: 5px 5px 1px black;
+    font-style: italic;
+}
+
+.container {
+    margin-left: 80px;
+    font-size: 16px;
+}
+
+.container p {
+    font-size: 18px;
+    color:white;
+}
+
+.pointer {
+    background-color:white;
+    width: 20px;
+    height: 20px;
+}
+
+.container a {
+    color:#fc8484;
+    padding:18px 14px;
+    text-align: center;
+}

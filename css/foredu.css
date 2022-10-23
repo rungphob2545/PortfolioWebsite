@@ -1,0 +1,109 @@
+body{
+    /* ส่วน body */
+    background-image:url(https://i.pinimg.com/564x/ac/af/b3/acafb3e0d487ebf412f8d118fc54b486.jpg);
+    font-family:monospace;
+}
+
+ul {
+    /* สำหรับลิสต์ลิงค์ไปหน้าต่างๆ */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color:rgb(156, 171, 240);
+    font-size:18px;
+}
+    /* สำหรับลิสต์ลิงค์ไปหน้าต่างๆ */
+li {
+    float:right;
+}
+    /* สำหรับลิสต์ลิงค์ไปหน้าต่างๆ */
+li a{
+    display: block;
+    color:#212F3D;
+    padding:18px 14px;
+    text-decoration: none;
+    text-align: center;
+}
+    /* เมื่อเอาเมาส์วางไว้ที่ลิงค์ */
+li a:hover{
+    background-color:#525D69;
+    color:#FFF;
+
+}
+    /* cssสำหรับแสดงหน้าที่เราอยู่ */
+.active{
+    background-color:#31383E;
+    color:#FFF;
+}
+    /* สำหรับลิงค์home */
+.activehome{
+    background-color:#0E0E0F;
+    color:#FFF;
+}
+    /* สำหรับลิงค์home */
+.activehome:hover{
+    background-color:#31383E;
+    color:#FFF;
+}
+    
+h1 {
+    /* ส่วนheader */
+    font-size:52px;
+    font-family:'Courier New', Courier, monospace;
+    color:rgb(245, 248, 39);
+    text-shadow:3px 10px 10px #000;
+    white-space: pre;
+    margin:10px;
+   
+}
+
+.container{
+    /* กล่องใหญ่ */
+    width:70vw;
+    height:80vh;
+    margin:20px auto;
+    padding:20px;
+    border-radius:30px;
+    background-color:rgba(255, 1, 1, 0.3);
+    display:flex;
+}
+.container-child{
+    /* กล่องเล็ก */
+    padding:0px;
+    margin: 0px;
+}
+
+/* animation */
+@keyframes logo {
+    0% {margin-top:0px;}
+    50% {margin-top:10px;}
+    100% {margin-top:0px;}
+}
+
+/* รูปภาพใน container-child */
+.container-child img {
+    padding:40px;
+    margin-left: 20px;
+    /* animation */
+    animation-name: logo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+.edutext{
+    /* css สำหรับข้อความในกล่อง container-child */
+    text-align:right ;
+    font-size:22px;
+    color:#FFF;
+    text-shadow: 3px 10px 10px #000;
+    background-color:rgba(151, 145, 145, 0.3);
+    border-radius: 10% ;
+    opacity: 1;
+    padding: 20px;
+}
+    /*  ใช้เพื่อให้ข้อความอยู่ทางซ้าย */
+.lefttext{
+    text-align: left;
+}

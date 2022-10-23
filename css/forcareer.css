@@ -1,0 +1,173 @@
+body{
+    /* ส่วน body */
+    background-image:url(https://i.pinimg.com/564x/ac/af/b3/acafb3e0d487ebf412f8d118fc54b486.jpg);
+    background-position: center;
+    font-family:monospace;
+}
+
+ul {
+    /* สำหรับลิสต์ลิงค์ไปหน้าต่างๆ */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color:rgb(156, 171, 240);
+    font-size:18px;
+}
+    /* สำหรับลิสต์ลิงค์ไปหน้าต่างๆ */
+li {
+    float:right;
+}
+    /* สำหรับลิสต์ลิงค์ไปหน้าต่างๆ */
+li a{
+    display: block;
+    color:#212F3D;
+    padding:18px 14px;
+    text-decoration: none;
+    text-align: center;
+}
+    /* เมื่อเอาเมาส์วางไว้ที่ลิงค์ */
+li a:hover{
+    background-color:#525D69;
+    color:#FFF;
+
+}
+    /* cssสำหรับแสดงหน้าที่เราอยู่ */
+.active{
+    background-color:#31383E;
+    color:#FFF;
+}
+    /* สำหรับลิงค์home */
+.activehome{
+    background-color:#0E0E0F;
+    color:#FFF;
+}
+    /* สำหรับลิงค์home */
+.activehome:hover{
+    background-color:#31383E;
+    color:#FFF;
+}
+   
+    /* header ใน กล่องเล็ก */
+.container-child h1 {
+    font-size:52px;
+    font-family:'Courier New', Courier, monospace;
+    color:rgb(255, 255, 255);
+    text-shadow:10px 3px 5px #000;
+    margin:40px;
+    text-align: center;
+}
+    /* ระยะห่างรูปภาพ */
+img {
+    padding:50px;
+}
+
+    /* กล่องใหญ่ */
+.container {
+    width:70vw;
+    height:75vh;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10%;
+    background-color:rgba(218, 248, 225, 0.5);
+    box-shadow: 10px 15px 1px rgb(0, 0, 0);
+}
+    /* กล่องเล็ก */
+.container-child{
+    padding:0px;
+    margin: 0px;
+}
+
+    /* ส่วนลูกเล่นและรูปภาพในกล่อง */
+#webdevelop {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/data-science-1-1/512/20-512.png);
+    background-size: 42vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: 'Web Developer'
+}
+  
+    /* ส่วนลูกเล่นและรูปภาพในกล่อง */
+#webdevelop::after {
+    content: 'Web Developer';
+}
+
+    /* ส่วนลูกเล่นและรูปภาพในกล่อง */
+#webdesign {
+    background-image: url(https://www.pinclipart.com/picdir/big/420-4207235_web-design-icon-png-web-hosting-icons-png.png);
+    background-size: 42vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    
+    /* ส่วนลูกเล่นและรูปภาพในกล่อง */
+#webdesign:after {
+    content: 'Web Designer';
+}
+
+    /* ส่วนลูกเล่นและรูปภาพในกล่อง */
+#programmer {
+    background-image: url(https://www.flaticon.com/svg/static/icons/svg/1995/1995515.svg);
+    background-size: 30vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:rgb(255,0,0);
+}
+
+    /* ส่วนลูกเล่นและรูปภาพในกล่อง */
+#programmer:after{
+    content: 'Programmer';
+}
+
+    /* ส่วนลูกเล่นและรูปภาพในกล่อง */
+.icon {
+    width: 308px;
+    height: 325px;
+    /* ตัวอักษรอยู่ตรงกลางด้วย flex box */
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    align-items: center;
+    /* ส่วนที่ซ้อนทับลงมา */
+    box-shadow: 0 0 0 160px inset, 0 0 5px #758ea7;
+    /* เมื่อนำเมาส์ออก */
+    transition: box-shadow 1s;
+    float: left;
+    margin: 25px;
+}
+  
+  
+  /* ชื่ออาชีพ */
+  
+  .icon::after {
+    width: 70%;
+    height: 70%;
+    display: block;
+    white-space: pre;
+    color: #FFF;
+    text-align: center;
+    /* ตัวอักษรอยู่ตรงกลางด้วย flex box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:35px;
+    /* เมื่อนำเมาส์ออก */
+    transition: opacity 1s 0.5s;
+}
+  
+  
+  /* เปิดภาพ */
+  
+  .icon:hover {
+    box-shadow: 0 0 0 5px inset, 0 0 5px rgb(138, 137, 137), 0 0 10px rgb(138, 137, 137) inset;
+    transition: box-shadow 1s;
+}
+  
+  
+  /* ซ่อนตัวอักษร */
+  
+  .icon:hover::after {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
